@@ -13,8 +13,9 @@
 
 function multiplay(number_1, number_2) {
   return number_1 * number_2;
-  function add(number_3, number_4) {
+};
+function add(number_3, number_4) {
     var number_3 = number_1 * number_2;
     return number_3 + number_4;
-  }
 };
+console.log(multiplay, add);
