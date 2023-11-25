@@ -9,14 +9,14 @@
 
 // console.log(multiplay(36325, 9824));
 // console.log(add(356856800, 777));
-// console.log(multiplay, add);
 
 function multiplay(number_1, number_2) {
+  var func_1 = number_1 * number_2;
   return number_1 * number_2;
 };
 function add(number_3, number_4) {
-    var number_3 = multiplay;
+    var number_3 = func_1;
     return number_3 + number_4;
 };
 console.log(multiplay(36325, 9824));
-console.log(add(multiplay, 777));
+console.log(add(func_1, 777));
