@@ -9,5 +9,4 @@ var multiplay = function (number_3, number_4) {
   return number_3 * number_4;
 };
 
-console.log(multiplay(36325, 9824));
-console.log(add("multiplay", 777)); 
+console.log(multiplay, add); 
