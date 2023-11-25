@@ -24,4 +24,16 @@ function multiplay(number_3, number_4) {
 console.log(add(multiplay(36325, 9824), 777));
 
 // 2: are these arrays the same?
-function areArraysSame() { };
+function areArraysSame(array_1, array_2) {
+  for (var i = 0; i < areArraysSame.length; i++){
+    if (array_1 === array_2) {
+    return true;
+  }
+
+  if (array_1 !== array_2) {
+    return false;
+  }
+  }
+};
+ 
+console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
