@@ -8,4 +8,4 @@ var add = function (multiplay, number_3) {
 };
 
 console.log(multiplay(36325, 9824));
-console.log(multiplay, add); 
+console.log(add(multiplay, 777)); 
