@@ -12,7 +12,7 @@
 
 function multiplay(number_1, number_2) {
   var func_1 = number_1 * number_2;
-  return number_1 * number_2;
+  return func_1;
 };
 function add(number_3, number_4) {
     var number_3 = func_1;
