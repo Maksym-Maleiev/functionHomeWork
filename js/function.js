@@ -7,4 +7,5 @@ var multiplay = function (number_3, number_4) {
   return number_3 * number_4;
 };
 
-console.log(add("9824", "777")); 
+console.log(add(9824, 777)); 
+console.log(multiplay, add);
