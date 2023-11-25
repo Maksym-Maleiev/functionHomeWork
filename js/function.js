@@ -18,3 +18,5 @@ function multiplay(number_3, number_4) {
   var number_1 = number_3 * number_4;
   return number_1;
 };
+console.log(multiplay(36325, 9824));
+console.log(add(multiplay(36325, 9824)), 777);
