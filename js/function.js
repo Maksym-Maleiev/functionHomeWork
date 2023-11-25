@@ -1,1 +1,1 @@
-// #1: 
+// #1: we count with functions
