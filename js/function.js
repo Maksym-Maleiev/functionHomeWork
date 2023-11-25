@@ -26,14 +26,14 @@ console.log(add(multiplay(36325, 9824), 777));
 // 2: are these arrays the same?
 function areArraysSame(array_1, array_2) {
   for (var i = 0; i < areArraysSame.length; i++){
-    if (array_1 === array_2) {
+    if (array_1[i] === array_2[i]) {
     return true;
-  }
+    };
 
-  if (array_1 !== array_2) {
+  if (array_1[i] !== array_2[i]) {
     return false;
-  }
-  }
+    };
+  };
 };
  
 console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
