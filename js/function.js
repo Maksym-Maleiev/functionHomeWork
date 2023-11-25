@@ -1,6 +1,6 @@
 // #1: we count with functions
 var add = function (number_3, number_4) {
-  number_3 = multiplay;
+  number_3 = multiplay();
   return number_3 + number_4;
 };
 
