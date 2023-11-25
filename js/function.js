@@ -8,5 +8,6 @@ var multiplay = function (number_1, number_2) {
   return number_1 * number_2;
 };
 
-multiplay(36325, 9824); 
+multiplay(36325, 9824);
+add(multiplay, 777); 
 console.log(multiplay, add);
