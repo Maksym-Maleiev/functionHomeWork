@@ -65,7 +65,10 @@ var pickWord = function () {
 };
 
 var setupAnswerArray = function (word) {
-  return answerArray[word];
+  for (var i = 0; i < word.length; i++){
+  answerArray[i] = "_";
+  };
+  return answerArray[i];
 };
 
 var showPlayerProgress = function () {
@@ -78,7 +81,7 @@ var getGuess = function () {
 };
 
 var updateGameState = function (guess, word, answerArray) {
-  for (var i = 0; i < word.length; i++){
+  for (var j = 0; j < word.length; j++){
     if (word[i] === guess && answerArray === "_") {
       answerArray[i] = guess;
       --remainingLetters;
