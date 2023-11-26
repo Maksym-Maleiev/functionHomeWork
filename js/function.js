@@ -47,6 +47,7 @@ console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
 console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
 
 // #3: we create a "HangMan" game using functions
+var pickWord = function () {
   var words = [
   "javascript",
   "monkey",
@@ -59,9 +60,7 @@ console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
   "ring",
   "elf"
 ];
-
   // Choose a random word
-  var pickWord = function (){
   return words[Math.floor(Math.random() * words.length)];
 };
 
@@ -101,11 +100,11 @@ var updateGameState = function (guess, word, answerArray) {
 var showAnswerAndCongratulatePlayer = function (answerArray) {
   // We show the answer and welcome the player
   showPlayerProgress(answerArray);
-    if (guess > 0) {
-  alert("Good job! The answer was " + word);
-} else {
-  alert("It's OK! Try on later! The answer was " + word);
-}
+  if (guess > 0) {
+    alert("Good job! The answer was " + word);
+  } else {
+    alert("It's OK! Try on later! The answer was " + word);
+  }
 };
 
 var word = pickWord();
