@@ -84,7 +84,7 @@ var updateGameState = function (guess, word, answerArray) {
   for (var j = 0; j < word.length; j++){
     if (word[i] === guess && answerArray[j] === "_") {
       answerArray[i] = guess;
-    }
+    } 
   }
 };
 
@@ -102,7 +102,7 @@ var answerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
 var guessTrying = 12;
 
-while (remainingLetters > 0) {
+while (remainingLetters > 0 && guessTrying > 0) {
   showPlayerProgress(answerArray);
   var guess = getGuess();
   if (guess === null) {
