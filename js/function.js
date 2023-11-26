@@ -47,6 +47,26 @@ console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
 console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
 
 // #3: we create a "HangMan" game using functions
+var words = [
+  "javascript",
+  "monkey",
+  "amazing",
+  "pancake",
+  "hogwarts",
+  "potion",
+  "alohomora",
+  "magic",
+  "ring",
+  "elf"
+];
+
+var pickWord = function () {
+  return words[Math.floor(Math.random() * words.length)];
+};
+
+var setupAnswerArray = function (word) {
+  
+};
 
 var word = pickWord();
 var setupAnswerArray = setupAnswerArray(word);
