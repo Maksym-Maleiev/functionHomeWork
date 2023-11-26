@@ -65,7 +65,7 @@ var pickWord = function () {
 };
 
 var setupAnswerArray = function (word) {
-  
+  return answerArray;
 };
 
 var word = pickWord();
