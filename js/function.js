@@ -77,13 +77,13 @@ var showPlayerProgress = function (answerArray) {
 
 var getGuess = function () {
   var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+  return guess;
 };
 
 var updateGameState = function (guess, word, answerArray) {
   for (var j = 0; j < word.length; j++){
     if (word[i] === guess && answerArray === "_") {
       answerArray[i] = guess;
-      --remainingLetters;
     };
   }
 };
