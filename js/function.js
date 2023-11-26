@@ -73,11 +73,13 @@ var setupAnswerArray = function (word) {
 };
 
 var showPlayerProgress = function (answerArray) {
+  // Show the player their progress
   alert(answerArray.join(" "));
 };
 
 var getGuess = function () {
- return prompt("Guess a letter, or click Cancel to stop playing.");
+  var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+  return guess;
 };
 
 var updateGameState = function (guess, word, answerArray) {
@@ -117,4 +119,4 @@ while (remainingLetters > 0 && guessTrying > 0) {
   }
 }
 
-console.log(showAnswerAndCongratulatePlayer(answerArray));
+showAnswerAndCongratulatePlayer(answerArray);
