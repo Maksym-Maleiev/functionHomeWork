@@ -48,14 +48,8 @@ console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
 
 // #3: we create a "HangMan" game using functions
 
-var word = function pickWord() {
-  return word;
-};
-
-var answerArray = function setupAnswerArray(word) {
-  return answerArray;
-};
-
+var word = pickWord();
+var setupAnswerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
 
 while (remainingLetters > 0) {
