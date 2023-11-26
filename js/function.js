@@ -100,7 +100,11 @@ var updateGameState = function (guess, word, answerArray) {
 var showAnswerAndCongratulatePlayer = function (answerArray) {
   // We show the answer and welcome the player
   showPlayerProgress(answerArray);
-    alert("Good job! The answer was " + answerArray.join(""));
+    if (guess > 0) {
+  alert("Good job! The answer was " + word);
+} else {
+  alert("It's OK! Try on later! The answer was " + word);
+}
 };
 
 var word = pickWord();
