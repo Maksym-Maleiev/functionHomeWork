@@ -61,10 +61,12 @@ var words = [
 ];
 
 var pickWord = function () {
+  // Choose a random word
   return words[Math.floor(Math.random() * words.length)];
 };
 
 var setupAnswerArray = function (word) {
+  // We set the array of answers
   var answerArray = [];
   for (var i = 0; i < word.length; i++) { 
     answerArray[i] = "_";
