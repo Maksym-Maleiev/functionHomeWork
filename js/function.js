@@ -72,7 +72,7 @@ var setupAnswerArray = function (word) {
 };
 
 var showPlayerProgress = function (answerArray) {
-  alert(answerArray);
+  alert(answerArray.join(" "));
 };
 
 var getGuess = function () {
