@@ -82,7 +82,7 @@ var updateGameState = function (guess, word, answerArray) {
 };
 
 var showAnswerAndCongratulatePlayer = function (answerArray) {
-  
+  alert(answerArray.join(" "));
 };
 
 var word = pickWord();
