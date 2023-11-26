@@ -65,10 +65,9 @@ var pickWord = function () {
 };
 
 var setupAnswerArray = function (word) {
-  for (var i = 0; i < word.length; i++){
-  answerArray[i] = "_";
-  };
-  return answerArray[i];
+  for (var i = 0; i < word.length; i++) { 
+   return answerArray[i] = "_";
+  }
 };
 
 var showPlayerProgress = function () {
