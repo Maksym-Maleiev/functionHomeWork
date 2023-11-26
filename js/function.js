@@ -72,6 +72,10 @@ var showPlayerProgress = function () {
   alert(answerArray.join(" "));
 };
 
+var getGuess = function () {
+  
+};
+
 var word = pickWord();
 var setupAnswerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
