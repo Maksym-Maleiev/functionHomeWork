@@ -82,7 +82,7 @@ var getGuess = function () {
 
 var updateGameState = function (guess, word, answerArray) {
   for (var j = 0; j < word.length; j++){
-    if (word[i] === guess && answerArray === "_") {
+    if (word[i] === guess && answerArray[j] === "_") {
       answerArray[i] = guess;
     };
   }
