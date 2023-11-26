@@ -101,9 +101,9 @@ var showAnswerAndCongratulatePlayer = function (answerArray) {
   // We show the answer and welcome the player
   showPlayerProgress(answerArray);
   if (guess > 0) {
-    alert("Good job! The answer was " + word);
+    alert("Good job! The answer was " + answerArray.join(""));
   } else {
-    alert("It's OK! Try on later! The answer was " + word);
+    alert("It's OK! Try on later! The answer was " + answerArray.join(""));
   }
 };
 
