@@ -65,4 +65,4 @@ while (remainingLetters > 0) {
   }
 }
 
-showAnswerAndCongratulatePlayer(answerArray);
+console.log(showAnswerAndCongratulatePlayer(answerArray));
