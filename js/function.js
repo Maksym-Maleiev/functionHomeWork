@@ -98,6 +98,7 @@ var updateGameState = function (guess, word, answerArray) {
 };
 
 var showAnswerAndCongratulatePlayer = function (answerArray) {
+  // We show the answer and welcome the player
   alert(answerArray.join(" "));
   if (guess > 0) {
     alert("Good job! The answer was " + word);
