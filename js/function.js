@@ -86,7 +86,8 @@ var getGuess = function () {
 
 var updateGameState = function (guess, word, answerArray) {
 // Updates answerArray according to the player's answer (guess)
-  // returns a number indicating how many times the letter guess appears in the word so that the value of remainingLetters can be updated
+  // returns a number indicating how many times the letter guess
+  // appears in the word so that the value of remainingLetters can be updated
   var appearances = 0;
   for (var j = 0; j < word.length; j++){
     if (word[i] === guess && answerArray[j] === "_") {
