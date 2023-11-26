@@ -77,6 +77,10 @@ var getGuess = function () {
   return guess;
 };
 
+var updateGameState = function (guess, word, answerArray) {
+  
+};
+
 var word = pickWord();
 var setupAnswerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
