@@ -80,6 +80,7 @@ var showPlayerProgress = function (answerArray) {
 };
 
 var getGuess = function () {
+   // Take input from the player
   return prompt("Guess a letter, or click Cancel to stop playing.");
 };
 
