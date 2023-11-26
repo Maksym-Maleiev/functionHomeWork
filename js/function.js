@@ -70,7 +70,7 @@ var setupAnswerArray = function (word) {
   }
 };
 
-var showPlayerProgress = function () {
+var showPlayerProgress = function (answerArray) {
   alert(answerArray.join(" "));
 };
 
