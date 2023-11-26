@@ -73,7 +73,8 @@ var showPlayerProgress = function () {
 };
 
 var getGuess = function () {
-  
+  var guess = prompt("Guess a letter, or click Cancel to stop playing."); 
+  return guess;
 };
 
 var word = pickWord();
