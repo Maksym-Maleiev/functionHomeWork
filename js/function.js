@@ -66,7 +66,7 @@ var pickWord = function () {
 
 var setupAnswerArray = function (word) {
   for (var i = 0; i < word.length; i++) { 
-    return answerArray["_"];
+    return answerArray;
   }
 };
 
