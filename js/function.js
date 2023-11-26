@@ -78,7 +78,9 @@ var getGuess = function () {
 };
 
 var updateGameState = function (guess, word, answerArray) {
-  
+  for (var i = 0; i < word.length; i++){
+    
+  }
 };
 
 var showAnswerAndCongratulatePlayer = function (answerArray) {
