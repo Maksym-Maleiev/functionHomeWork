@@ -45,3 +45,24 @@ console.log(areArraysSame([1, 2, 3], [4, 5, 6]));
 console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
 
 console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
+
+// #3: we create a "HangMan" game using functions
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+
+while (remainingLetters > 0) {
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else {
+    var correctGuess = updateGameState(guess, word, aswerArray);
+    remainingLetters -= correctGuess;
+  }
+}
+
+showAnswerAndCongratulatePlayer(answerArray);
