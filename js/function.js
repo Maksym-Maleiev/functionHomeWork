@@ -76,8 +76,8 @@ var showPlayerProgress = function (answerArray) {
 };
 
 var getGuess = function () {
-  var guess = prompt("Guess a letter, or click Cancel to stop playing."); 
-  return guess;
+  var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+  return getGuess(guess);
 };
 
 var updateGameState = function (guess, word, answerArray) {
