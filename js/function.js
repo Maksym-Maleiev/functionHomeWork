@@ -89,7 +89,7 @@ var updateGameState = function (guess, word, answerArray) {
 // appears in the word so that the value of remainingLetters can be updated
   var appearances = 0;
   for (var j = 0; j < word.length; j++){
-    if (word[i] === guess && answerArray[j] === "_") {
+    if (word[j] === guess && answerArray[j] === "_") {
       answerArray[j] = guess;
       appearances++;
     } 
