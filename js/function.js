@@ -100,6 +100,7 @@ var showAnswerAndCongratulatePlayer = function (answerArray) {
 var word = pickWord();
 var answerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
+var guessTrying = 12;
 
 while (remainingLetters > 0) {
   showPlayerProgress(answerArray);
@@ -109,6 +110,8 @@ while (remainingLetters > 0) {
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
   } else {
+    --guessTrying;
+    guess = guess.toLowerCase();
     var correctGuess = updateGameState(guess, word, aswerArray);
     remainingLetters -= correctGuess;
   }
