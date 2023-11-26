@@ -81,6 +81,10 @@ var updateGameState = function (guess, word, answerArray) {
   
 };
 
+var showAnswerAndCongratulatePlayer = function (answerArray) {
+  
+};
+
 var word = pickWord();
 var answerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
