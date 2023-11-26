@@ -82,7 +82,7 @@ var updateGameState = function (guess, word, answerArray) {
 };
 
 var word = pickWord();
-var setupAnswerArray = setupAnswerArray(word);
+var answerArray = setupAnswerArray(word);
 var remainingLetters = word.length;
 
 while (remainingLetters > 0) {
